@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cinema Theatres</title>
+<link rel="stylesheet" href="styleTheatre_Show_Hyd.css">
+</head>
+<body>
+
+<header>
+    <h1> Here are the Movie Theatres in your city!!</h1>
+</header>
+
+<div class="theatre-container">
+    <div class="theatre">
+        <h2>Theatre 1</h2>
+        <div class="time-slot" id="time-slot-1" onmouseover="showOccupancy('time-slot-1')" onmouseout="hideOccupancy('time-slot-1')">
+            <a href="select_seat_hyderabad.html"><div class="time">10:00 AM</div></a>
+            <div class="occupancy" id="occupancy-1">
+                <div class="percentage"></div>
+            </div>
+        </div>
+        <div class="time-slot" id="time-slot-2" onmouseover="showOccupancy('time-slot-2')" onmouseout="hideOccupancy('time-slot-2')">
+            <a href="select_seat_hyderabad.html"><div class="time">1:00 PM</div></a>
+            <div class="occupancy" id="occupancy-2">
+                <div class="percentage"></div>
+            </div>
+        </div>
+        <div class="time-slot" id="time-slot-3" onmouseover="showOccupancy('time-slot-3')" onmouseout="hideOccupancy('time-slot-3')">
+            <a href="select_seat_hyderabad.html"><div class="time">4:00 PM</div></a>
+            <div class="occupancy" id="occupancy-3">
+                <div class="percentage"></div>
+            </div>
+        </div>
+    </div>
+    <div class="theatre">
+        <h2>Theatre 2</h2>
+        <div class="time-slot" id="time-slot-4" onmouseover="showOccupancy('time-slot-4')" onmouseout="hideOccupancy('time-slot-4')">
+            <a href="select_seat_hyderabad.html"><div class="time">11:00 AM</div></a>
+            <div class="occupancy" id="occupancy-4">
+                <div class="percentage"></div>
+            </div>
+        </div>
+        <div class="time-slot" id="time-slot-5" onmouseover="showOccupancy('time-slot-5')" onmouseout="hideOccupancy('time-slot-5')">
+            <a href="select_seat_hyderabad.html"><div class="time">2:00 PM</div></a>
+            <div class="occupancy" id="occupancy-5">
+                <div class="percentage"></div>
+            </div>
+        </div>
+        <div class="time-slot" id="time-slot-6" onmouseover="showOccupancy('time-slot-6')" onmouseout="hideOccupancy('time-slot-6')">
+            <a href="select_seat_hyderabad.html"><div class="time">5:00 PM</div></a>
+            <div class="occupancy" id="occupancy-6">
+                <div class="percentage"></div>
+            </div>
+        </div>
+    </div>
+    <div class="theatre">
+        <h2>Theatre 3</h2>
+        <div class="time-slot" id="time-slot-7" onmouseover="showOccupancy('time-slot-7')" onmouseout="hideOccupancy('time-slot-7')">
+            <a href="select_seat_hyderabad.html"><div class="time">12:00 PM</div></a>
+            <div class="occupancy" id="occupancy-7">
+                <div class="percentage"></div>
+            </div>
+        </div>
+        <div class="time-slot" id="time-slot-8" onmouseover="showOccupancy('time-slot-8')" onmouseout="hideOccupancy('time-slot-8')">
+            <a href="select_seat.html"><div class="time">3:00 PM</div></a>
+            <div class="occupancy" id="occupancy-8">
+                <div class="percentage"></div>
+            </div>
+        </div>
+        <div class="time-slot" id="time-slot-9" onmouseover="showOccupancy('time-slot-9')" onmouseout="hideOccupancy('time-slot-9')">
+           <a href="select_seat.html"> <div class="time">6:00 PM</div></a>
+            <div class="occupancy" id="occupancy-9">
+                <div class="percentage"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="city-user-container"> 
+    <div class="city-box" id="cityName">
+        <span>HYDERABAD</span>
+    </div>
+    <div class="user-circle" onclick="toggleDropdown()">
+        <span>5</span>
+        <div class="dropdown-content" id="dropdownContent">
+            <a href="contact.html">Contact us</a>
+            <hr>
+            <a href="login_page.html">Log out</a>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="theatre_show_hyderabad.js"></script>
+</body>
+</html>

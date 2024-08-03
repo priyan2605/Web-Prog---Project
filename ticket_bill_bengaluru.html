@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Details</title>
+<link rel="stylesheet" href="styleticke_bill_beng.css">
+</head>
+<body>
+
+<div class="container">
+    <h1><u>BOOKING DETAILS</u></h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Bookings</th>
+                <th>Price</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="booking-table-body">
+            <!-- Bookings will be displayed here -->
+        </tbody>
+    </table>
+
+    <h2 style="margin-top: 40px;"><u>BEVERAGES</u></h2>
+    <div id="beverage-container">
+        <!-- Beverage options will be displayed here -->
+    </div>
+
+    <div class="total-price" id="total-price"></div>
+
+    <button class="btn" onclick="continueToPayment()">Continue to Payment</button>
+</div>
+<div class="city-user-container"> 
+    <div class="city-box" id="cityName">
+        <span>BENGALURU</span>
+    </div>
+    
+    <div class="user-circle" onclick="toggleDropdown()">
+        <span>5</span>
+        <div class="dropdown-content" id="dropdownContent">
+            <a href="contact.html">Contact us</a>
+            <hr>
+            <a href="login_page.html">Log out</a>
+        </div>
+    </div>
+</div>
+
+<script src="ticket_bill_bengaluru.js"></script>
+
+</body>
+</html>

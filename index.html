@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Services</title>
+<link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+
+<div class="container">
+    <section id="section1">
+        <h2>ABOUT US</h2>
+        <p>We are a company dedicated to providing exceptional entertainment experiences. From movies to events, we strive to offer unforgettable moments for our customers.</p>
+    </section>
+
+    <section id="section2">
+        <h2>OUR SERVICES</h2>
+        <div class="services">
+            <div class="service" onclick="window.location.href='Select_City.html'">
+                <div class="service-title">BOOK A MOVIE</div>
+                <img src="Movies.jpg" alt="Book a Movie">
+            </div>
+            <div class="service" onclick="window.location.href='event_select.html'">
+                <div class="service-title">BOOK AN EVENT</div>
+                <img src="Events.jpg" alt="Book an Event">
+            </div>
+        </div>
+    </section>
+</div>
+<div class="user-circle" onclick="toggleDropdown()">
+    <span>5</span>
+    <div class="dropdown-content" id="dropdownContent">
+        <a href="contact.html">Contact us</a>
+        <hr>
+        <a href="login_page.html">Log out</a>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

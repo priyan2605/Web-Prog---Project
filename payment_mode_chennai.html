@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Page</title>
+<link rel="stylesheet" href="stylepayment_mode_chennai.css">
+</head>
+<body>
+<div class="container">
+  <div class="payment-section">
+    <h2>Mode of Payment</h2>
+    <div class="subheading">
+        <div class="dropdown">
+        <a href="card_details.html" class="card">Credit Card</a>
+        </div>
+      </div>
+      <div class="subheading">
+        <div class="dropdown">
+        <a href="card_details.html" class="card"><span href="card_details.html">Debit Card</span></a>
+        </div>
+      </div>
+
+    </div>
+  <div class="bill">
+    <h2>Bill</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>S No.</th>
+          <th>Booking</th>
+          <th>Price (INR)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Booking 1</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Booking 2</td>
+          <td>1500</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Booking 3</td>
+          <td>2000</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <div id="sgst">SGST: 5%</div>
+    <div id="cgst">CGST: 5%</div>
+    <hr>
+    <div class="total">TOTAL AMOUNT: ₹ <span id="totalAmount">0</span></div>
+  </div>
+</div>
+<div class="city-user-container"> 
+  <div class="city-box" id="cityName">
+      <span>CHENNAI</span>
+  </div>
+
+  <div class="user-circle" onclick="toggleDropdown()">
+    <span>5</span>
+    <div class="dropdown-content" id="dropdownContent">
+        <a href="contact.html">Contact us</a>
+        <hr>
+        <a href="login_page.html">Log out</a>
+    </div>
+</div>
+</div>
+
+<script src="payment_mode_chennai.js"></script>
+
+</body>
+</html>

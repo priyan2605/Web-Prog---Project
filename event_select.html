@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Upcoming Events</title>
+    <link rel="stylesheet" href="styleEvent_Select.css">
+</head>
+
+<body>
+    <h1 class="heading">Upcoming Events</h1>
+
+    <!-- Filter section -->
+    <div class="filter-section">
+        <label for="filterOptions">Filter by:</label>
+        <select id="filterOptions" class="filter-select">
+            <option value="alphabetical">Alphabetical Order</option>
+            <option value="nearest-date">Nearest Date</option>
+        </select>
+    </div>
+    <div class="user-circle" onclick="toggleDropdown()">
+        <span>5</span>
+        <div class="dropdown-content" id="dropdownContent">
+            <a href="contact.html">Contact us</a>
+            <hr>
+            <a href="login_page.html">Log out</a>
+        </div>
+    </div>
+
+    <!-- Event container -->
+    <div class="event-container" id="eventContainer"></div>
+
+    <script src="event_select.js"></script>
+</body>
+
+</html>

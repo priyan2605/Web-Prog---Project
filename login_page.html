@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eventify - Sign Up/Login</title>
+<link rel="stylesheet" href="stylelogin_page.css">
+</head>
+<body>
+<div id="container">
+    <div id="left-side">
+        <h2>Welcome to ShowStream!</h2>
+        <p style="font-size: 30px;">Your one-stop solution to book your tickets</p>
+        <div class="scrolling-images">
+            <img class="active" src="OG.jpg" style="width:380px; height:500px;" alt="OG">
+            <img src="Kalki.jpg" style="width:380px; height:500px;" alt="Kalki">
+            <img src="Pushpa2.jpg" style="width:380px; height:500px;" alt="Pushpa2">
+            <img src="Devara.jpg" style="width:380px; height:500px;" alt="Devara">
+            <img src="Goat.jpg" style="width:380px; height:500px;" alt="Goat">
+            <img src="RC15.jpg" style="width:380px; height:500px;" alt="RC15">
+            <img src="UBS.jpg" style="width:380px; height:500px;" alt="UBS">
+        </div>
+    </div>
+    <div id="right-side">
+        <form id="signup-form">
+            <h2>Sign up/login</h2>
+            <input type="text" id="firstName" placeholder="First Name" required><br>
+            <input type="text" id="lastName" placeholder="Last Name" required><br>
+            <input type="email" id="email" placeholder="Email" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <input type="submit" value="Sign Up/Login">
+        </form>
+        <p id="success-message" style="display: none; color: green;">Signed in successfully</p>
+    </div>
+</div>
+
+<script src="login_page.js"></script>
+</body>
+</html>

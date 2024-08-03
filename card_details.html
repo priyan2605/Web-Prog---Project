@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Form</title>
+<link rel="stylesheet" href="stylecard_details.css">
+</head>
+<body>
+<div class="container">
+  <h2><u>CARD DETAILS</u></h2>
+  <div class="credit-card-images">
+    <img src="https://i.pinimg.com/736x/35/6b/95/356b9546f3f77798b6a76fbc1a1cebf6.jpg" alt="Visa" onclick="enhanceImage(this)">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Rupay-Logo.png" alt="RuPay" onclick="enhanceImage(this)">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png" alt="Mastercard" onclick="enhanceImage(this)">
+    <img src="https://www.discoversignage.com/uploads/09-12-21_04:20_DGN_AcceptanceMark_FC_Hrz_RGB.png" alt="Discover Club" onclick="enhanceImage(this)">
+    <img src="https://w7.pngwing.com/pngs/745/624/png-transparent-centurion-card-american-express-credit-card-discover-card-mastercard-credit-card-blue-text-label.png" alt="American Express" onclick="enhanceImage(this)">
+  </div>
+
+  <div class="input-container">
+    <label for="cardNumber">Credit Card Number</label>
+    <input type="text" id="cardNumber" placeholder="Enter your card number">
+  </div>
+  <div class="input-container">
+    <label>Date of Expiry</label>
+    <input type="text" id="expiryDate" placeholder="MM/YY">
+    <label>CVV</label>
+    <input type="text" id="cvv" class="cvv" placeholder="Enter CVV">
+  </div>
+  <div class="input-container">
+    <label for="cardHolderName">Name of the Card Holder</label>
+    <input type="text" id="cardHolderName" placeholder="Enter card holder's name">
+  </div>
+  <div class="amount-container">
+    <label for="amount">Amount to be Paid</label>
+    <input type="text" id="amount" placeholder="Enter amount">
+  </div>
+  <button class="pay-btn" onclick="validateAndRedirect()">PAY</button>
+</div>
+<div class="user-circle" onclick="toggleDropdown()">
+  <span>5</span>
+  <div class="dropdown-content" id="dropdownContent">
+      <a href="contact.html">Contact us</a>
+      <hr>
+      <a href="login_page.html">Log out</a>
+  </div>
+</div>
+  <script src="card_details.js"></script>
+</body>
+</html>

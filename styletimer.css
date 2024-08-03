@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://www.shutterstock.com/image-photo/mobile-banking-network-online-payment-260nw-1431394361.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#countdown {
+    font-size: 36px;
+    margin-top: 50px;
+    color: #333;
+}
+
+#payment-process {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #333;
+}
+
+#payment-completed {
+    font-size: 24px;
+    margin-top: 20px;
+    color: green;
+    display: none;
+}
+
+#gif-container {
+    display: none;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#gif-container img {
+    width: 300px;
+    margin: 10px auto;
+    display: block;
+}
